@@ -1,0 +1,15 @@
+<header class="header">
+    <div class="contenedor">
+        <div class="header-contenido">
+            <p class="logo">CENTRO DE SALUD SAN LUIS</p>
+        </div>
+    </div>
+</header>
+<section class="banner">
+    <div class="banner-descripcion">
+        <div class="contenedor">
+            <h1>SERVICIOS DE SALUD DE CALIDAD PARA TODA TU FAMILIA</h1>
+            <!--<input type="button" value="comprar" class="button-banner">-->
+        </div>
+    </div>
+</section>

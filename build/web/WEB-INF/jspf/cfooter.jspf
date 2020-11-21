@@ -1,0 +1,45 @@
+<div class="info-container">
+    <div class="info-main">
+        <h3>Contáctanos</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis laboriosam blanditiis esse cumque vitae velit, quos doloremque, molestiae corrupti dicta iusto voluptates quis. Ducimus sapiente amet obcaecati esse quasi nostrum.
+        </p>
+        <a href="">Más información</a>			
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-main">
+            <div class="footer-columna">
+                <h3>Suscríbete</h3>
+                <input type="email" placeholder="Ingrese su correo">
+                <input type="submit" value="Suscribirse">
+            </div>
+            <div class="footer-columna">				
+                <h3>Dirección</h3>					
+                <span><p><i class="fas fa-map-marker-alt"></i> 244 av. Los Incas-Perú</p></span>
+                <span><p><i class="fas fa-phone-alt"></i> (+51) 25 689745</p></span>
+                <span><p><i class="fas fa-envelope"></i> jkbujaico@gmail.com</p></span>					
+            </div>
+            <div class="footer-columna">
+                <h3>Sobre nosotros</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur minus labore quo consequatur magnam, culpa velit est quae possimus nostrum numquam, doloribus quos eos aliquam. Debitis ex odit vitae iusto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copy-redes">
+        <div class="main-copy-redes">
+            <div class="footer-copy">
+                &copy; Todos los derechos reservados - | Jerson Bujaico  |.
+            </div>
+
+            <div class="footer-redes">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square" title="Síguenos en Facebook"></i></a>
+                <a href="https://twitter.com/login?lang=es" target="_blank"><i class="fab fa-twitter" title="Síguenos en Twitter"></i></a>
+                <a href="https://www.youtube.com/?hl=es-419&gl=PE" target="_blank"><i class="fab fa-youtube" title="Síguenos en Youtube"></i></a>
+                <a href="https://play.google.com/store/apps?hl=es" target="_blank"><i class="fab fa-google-play" title="Descarga nuestra app para Android"></i></a>
+            </div>
+        </div>			
+    </div>
+</footer>

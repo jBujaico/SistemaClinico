@@ -1,0 +1,14 @@
+<section class="info"> 
+    <div class="contenedor">
+        <article class="info-columna">
+            <h1>25</h1><hr>
+            <p>Especialiades</p>
+
+            <h1>10</h1><hr>
+            <p>Sedes</p>
+
+            <h1>3000</h1><hr>
+            <p>Pacientes</p>
+        </article>
+    </div>
+</section>

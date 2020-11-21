@@ -1,0 +1,218 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.header-contenido{
+    position: relative;/*encima de todo*/
+    z-index: 100;
+}
+
+.logo{
+    font-weight: 900;
+    font-size:30px;
+    margin: 10px;
+    font-family: cambria;
+    color: #fff;
+
+
+}
+
+.banner{
+    height: 50vh;/*ocupa la mitad de la pagina*/
+    margin-top: -60px;
+    position: relative;/*encima de todo*/
+    background: url('../IMGS/especialidades/banner.jpg');
+    background-size: cover;/*tamaño del fondo*/
+    background-position: center;/*centre*/
+    background-attachment: fixed;/*parrallax(pegado)*/
+
+}
+
+.banner-descripcion{
+    position: absolute;/*dentro del banner(hereda de la clase superior)*/
+    text-align: center;
+    color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    width:100%;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.button-banner{
+    background: #9cc76b;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-size: 20px;	
+}
+
+.button-banner:hover{
+    border: 2px solid #9cc76b;
+    background: none;
+}
+
+.galeria h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.galeria{
+    margin:20px; /*para que tenga bordes*/
+}
+
+.galeria p{
+    margin-top: -25px;
+    display: block;
+    background: #00c6ee;
+    padding: 15px 50px; /*30px arriba y abajo, 50px a los costados*/
+    position: relative; 
+
+}
+
+.galeria a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+.galeria p:hover{
+    background: cadetblue;
+    cursor: pointer;
+    color: #fff;
+}
+.equipo h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.equipo{
+    background: #f6f6f6;
+    padding: 30px;
+}
+
+.equipo-columna img{
+    border-radius: 50%;
+}
+
+.equipo p{
+    text-align: justify;
+}
+
+.info h1{
+    color: #9cc76b;
+    font-size: 30px;
+}
+
+.equipo-grid{
+    display: grid;
+    grid-gap: 30px;
+}
+
+.info{
+    text-align: center;
+}
+
+.info-columna{
+    margin: 20px;
+}
+
+.info-contenedor{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.banner2{
+    height: 50vh;/*ocupa la mitad de la pagina*/
+    color: #040405;
+    position: relative;/*encima de todo*/
+    background: url('../IMGS/especialidades/banner.jpg');
+    background-size: cover;/*tamaño del fondo*/
+    background-position: right;/*centre*/
+    background-attachment: fixed;/*parrallax(pegado)*/
+}
+
+.banner2 h1{
+    font-size: 28px;
+}
+
+.banner2-descripcion{
+    position: absolute;
+    width: 100%;
+    top:50%;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.footer{
+    background: #292929;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+@media(min-width:520px){
+    .banner h1{
+        font-size: 30px;
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .equipo .equipo-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .info .contenedor{
+        grid-template-columns: repeat(3,150px);
+        justify-content: space-around;
+    }
+
+    .banner2 h1{
+        font-size: 50px;
+    }
+
+    .banner2 p{
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 728px){
+    .equipo .equipo-grid{
+        grid-template-columns: repeat(4,195px);
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 1024px){
+    .contenedor{
+        width: 1000px;
+    }
+    .banner h1{
+        font-size: 45px;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fit);
+    }
+}
+

@@ -1,0 +1,23 @@
+<% 
+String mensaje = request.getSession().getAttribute("mensaje").toString();
+String proceso= request.getSession().getAttribute("proceso").toString();
+%>
+
+<section>
+
+    <div class="row">
+        <div class="col-12 col-sm-6 col-lg-6 offset-lg-3">
+            <div class="card">
+                <h5 class="card-header">Mensaje de Transacción realizada</h5>
+                <div class="card-body">
+                    <h4><%=mensaje%></h4>
+                    <% if (proceso.equals("registro")) {%>
+                    <br>
+                    <a href="login.jsp"><button type="button" class="btn btn-success">Iniciar Sesión</button></a>
+                    <%}%>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

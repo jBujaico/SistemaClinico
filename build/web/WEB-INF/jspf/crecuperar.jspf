@@ -1,0 +1,22 @@
+<div class="registro-fondo">
+    <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+            <div class="card">
+                <h5 class="card-header">Recuperar contraseña</h5>
+                <div class="card-body">
+                    <form action="usuarioController.do" method="POST" onsubmit="" >
+                        <div class="form-group">
+                            <input type="hidden" name="txtProceso" value="recovery">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCorreo">Correo</label>
+                            <input type="email" class="form-control" id="txtCorreo" name="txtCorreo" placeholder="Ingresar correo">
+                        </div>
+                                       
+                        <button type="submit" class="btn btn-primary">Recuperar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

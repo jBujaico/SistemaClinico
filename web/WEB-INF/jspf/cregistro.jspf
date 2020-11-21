@@ -1,0 +1,128 @@
+<div class="registro-fondo">
+    <div class="row"><!--row ref a bootstrap (fila)-->
+        <!--grillas para todas la pantallas-->
+        <div class="col-lg-6 offset-lg-3"><!--xl toma el valor de lg si no define-->
+            <div class="card">
+                <h5 class="card-header">Regístrate</h5>
+                <div class="card-body">
+                    <form action="usuarioController.do" method="POST" onsubmit="return validarRegister();">
+                        <div class="form-group">
+                            <input type="hidden" name="txtProceso" value="registro">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtNombre">Nombre(s)</label>
+                            <input type="text" class="form-control" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre(s)">                            
+                        </div>
+                        <div class="form-group">
+                            <label for="txtApellido">Apellidos</label>
+                            <input type="text" class="form-control" name="txtApellido" id="txtApellido" placeholder="Ingrese sus apellidos">                            
+                        </div> 
+                        <div class="form-group">
+                            <label for="txtDNI">DNI</label>
+                            <input type="text" class="form-control" name="txtDNI" id="txtDNI" placeholder="Ingrese su DNI">                            
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFechanac">Fecha de nacimiento</label>
+                            <input type="date" class="form-control" name="txtFechanac" id="txtFechanac">                            
+                        </div>
+                        <div class="form-group">
+                            <label for="txtSexo">Sexo</label>
+                            <select class="form-control" id="txtSexo" name="txtSexo">
+                                <option value="elegir" selected="">Elegir</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtCorreo">Correo</label>
+                            <input type="email" class="form-control" name="txtCorreo" id="txtCorreo" placeholder="Ingrese su correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtClave">Clave</label>
+                            <input type="password" class="form-control" name="txtClave" id="txtClave" placeholder="Ingrese su clave">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtClave2">Repetir Clave</label>
+                            <input type="password" class="form-control" name="txtClave2" id="txtClave2" placeholder="Repita su clave">
+                        </div> 
+                        <div class="form-group">                                 
+                            <input type="hidden" class="form-control" id="txtPerfil" name="txtPerfil" value="usuario">
+                        </div><div class="form-group">
+                            <label for="txtPregunta">Pregunta secreta</label>
+                            <select id="txtPregunta" name="txtPregunta" class="form-control">
+                                <option value="elegir" selected="">Elija una de las opciones</option>
+                                <option value="cual es el nombre de su mascota">¿Cúal es el nombre de su mascota?</option>
+                                <option value="cual es el nombre de su padre">¿Cúal es el nombre de su padre?</option>
+                                <option value="cual es el nombre de su madre">¿Cúal es el nombre de su madre?</option>
+                                <option value="cuando es su cumpleaños">¿Cúando es su cumpleaños?</option>
+                            </select>                       
+                        </div>
+                        <div class="form-group">
+                            <label for="txtRespuesta">Respuesta secreta</label>
+                            <input type="text" class="form-control" id="txtRespuesta" name="txtRespuesta" placeholder="Ingresar respuesta">
+                        </div>   
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="chkTerminos">
+                            <!-- Button trigger modal -->
+                            <div data-toggle="modal" data-target="#exampleModalCenter">
+                                Acepto los términos y condiciones
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Términos y Condiciones</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Términos y Condiciones del Uso  Web de la Comisión de Promoción de Perú  Para la Exportación y el Turismo (Promperú)
+                                            1. Condiciones Generales y su Aceptacion
+
+                                            Las siguientes son las condiciones que regulan el uso de la información en formato digital y servicios de www.peru.travel (en adelante el "Sitio de Internet") que la Comisión de Promoción de Perú (en adelante "PromPerú") pone gratuitamente a disposición de los usuarios de internet.
+                                            La utilización del sitio confiere la condición de usuario y conlleva la aceptación plena y sin reservas de todas y cada una de las Condiciones Generales de Uso, desde el momento mismo del acceso al sitio. En consecuencia, el hecho de hacer uso de esta página web constituye la aceptación a las presentes condiciones de uso.
+                                            La utilización de ciertos servicios ofrecidos a los Usuarios a través del sitio está sometida a condiciones particulares, propias que, según los casos, sustituyen, completan y/o modifican las Condiciones Generales (en adelante las "Condiciones Particulares"), por lo que su uso constituye la aceptación a las condiciones particulares.
+                                            Estas condiciones constituyen un acuerdo completo entre el usuario y PromPerú respecto al uso de esta página web, y prevalece y reemplaza a otras comunicaciones acuerdos o propuestas verbales o escritas entre el usuario y la página web respecto únicamente del tema en cuestión.
+                                            PromPerú se reserva el derecho de modificar los Términos y Condiciones generales de Uso del Sitio en cualquier momento, notificando al usuario la nueva versión con las modificatorias insertas mediante la publicación en la página web, presumiéndose la aceptación de estas condiciones, en caso de continuar el usuario con la utilización del servicio.
+                                            2.- Objeto
+
+                                            A través del sitio, PromPerú facilita a los usuarios el acceso y la utilización de diversos servicios y contenidos puestos a su disposición por PromPerú, o por terceros usuarios del sitio y/o terceros proveedores de servicios y contenidos.
+                                            PromPerú se reserva el derecho a dar término o modificar unilateralmente la configuración, presentación y condiciones de uso del sitio o de sus servicios.
+                                            3.- Condiciones de Acceso y Utilización del Sitio
+                                            3.1.- Sobre el Acceso y Uso
+
+                                            Esta página web es para uso personal, por lo que el usuario no se encuentra autorizado a modificar, copiar, distribuir, divulgar, transmitir, utilizar, reproducir, publicar, ceder, vender la información, el software, los productos o servicios que pueda obtener de la página web.
+                                            La prestación del servicio de sitio por parte de PromPerú tiene carácter de gratuito para los usuarios y no exige la previa suscripción o registro del usuario, salvo indicación en contrario.
+                                            El Usuario se compromete a utilizar el sitio y los servicios de conformidad con la ley, la moral y las buenas costumbres.
+                                            El Usuario se obliga a abstenerse de utilizar el sitio y los servicios con fines o efectos ilícitos, contrarios a lo establecido en estas Condiciones Generales, lesivos de los derechos e intereses de terceros, que de cualquier forma puedan dañar, inutilizar, sobrecargar o deteriorar el sitio y los servicios o impedir la normal utilización o disfrute del sitio y de los servicios por parte de los usuarios.
+                                            3.2.- Sobre el Contenido
+
+                                            Si desea obtener información sobre cómo obtener el permiso de PromPerú para la utilización de los Contenidos, el Usuario deberá contactarse con nosotros
+                                            En caso de producirse violación a cualquiera de estos términos, el permiso para la utilización de los contenidos terminará automáticamente, debiendo el Usuario proceder inmediatamente a destruir las copias que haya realizado del material obtenido.
+                                            El Usuario se compromete a usar los contenidos de forma diligente, correcta y licita, absteniéndose de utilizarlos con fines contrarios a la ley, el orden público, la moral y las buenas costumbres.
+                                            3.3.- Propiedad Intelectual
+
+                                            Los derechos de propiedad intelectual respecto de los servicios, contenidos, signos distintivos y dominio del sitio, así como los derechos de uso y explotación de los mismos, incluyendo su divulgación, publicación, reproducción, distribución y transformación, son propiedad exclusiva de PromPerú. El Usuario no adquiere ningún derecho por el simple uso de los servicios y contenidos del sitio, y en ningún momento dicho uso será considerado como una autorización y/o licencia para la utilización de los mismos con fines distintos de los que se contemplan en los presentes términos y condiciones de uso.
+                                            3.4.- Propiedad Intelectual de Terceros
+
+                                            El Usuario acuerda que las disposiciones establecidas en el párrafo anterior, respecto a la titularidad de los derechos de PromPerú, también son aplicables a los derechos de terceros, respecto de los servicios y contenidos de las páginas enlazadas al sitio.
+                                            3.5.- Uso de Servicios
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div><!--offset-lg-4 (corre 4 a su derecha centrado)-->
+    </div>
+</div>

@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}*
+.registro-fondo{
+    margin-top:-160px;
+    padding: 150px 15px;
+    background: url('../IMGS/especialidades/login-registro.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.row{
+    margin-top:100px;
+}
+
+.row a{
+    text-decoration: none;
+}

@@ -1,0 +1,43 @@
+<section class="galeria">
+    <div class="contenedor">
+        <h1>Especialidades</h1>
+        <article class="grid">
+            <div><img src="RESOURCES/IMGS/especialidades/img1.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>            
+            <div><img src="RESOURCES/IMGS/especialidades/img2.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img3.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img4.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img5.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img6.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img7.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img8.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img9.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img10.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img11.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+            <div><img src="RESOURCES/IMGS/especialidades/img12.jpg" alt=""><a href="cardiologia.jsp"><p>Cardiología</p></a></div>
+
+        </article>
+    </div>
+</section>
+<section class="equipo">
+    <div class="contenedor">
+        <h1>Nuestro equipo</h1>
+        <div class="equipo-grid">
+            <article class="equipo-columna">
+                <img src="RESOURCES/IMGS/especialidades/doc1.jpg" alt="">
+            </article>
+
+            <article class="equipo-columna">
+                <img src="RESOURCES/IMGS/especialidades/doc2.jpg" alt="">
+            </article>
+
+            <article class="equipo-columna">
+                <img src="RESOURCES/IMGS/especialidades/doc3.jpg" alt="">
+            </article>
+
+            <article class="equipo-columna">
+                <img src="RESOURCES/IMGS/especialidades/doc4.jpg" alt="">
+            </article>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam culpa officiis magni ab, perspiciatis, nulla! Nam aliquid sequi ea quos nemo illo, ex, quis minus facere suscipit consectetur distinctio fuga.</p>
+    </div>
+</section>
